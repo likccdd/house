@@ -223,7 +223,8 @@ a {
 body {
     font-family: "Raleway", sans-serif;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
 
@@ -242,7 +243,7 @@ body {
 }
 
 nav {
-    margin-inline: 10px;
+    margin-inline: 15px;
     max-width: 1140px;
     display: flex;
     align-items: center;
@@ -285,9 +286,90 @@ nav {
     display: none;
 }
 
+.section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.section-container-bird {
+    display: flex;
+    margin-inline: 15px;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+
+.bird-content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.bird-img {
+    width: clamp(240px, 28.12vw, 540px);
+    height: clamp(320px, 32.29vw, 620px);
+}
+
+.h1-span {
+    color: #598D66;
+}
+
+.bird-h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 110.00000000000001%;
+}
+
+.bird-description {
+    color: #86928B;
+    line-height: 150%;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.button {
+    transition: 0.3s;
+    border: 1px #598D66 solid;
+    color: #598D66;
+    font-size: 20px;
+    font-weight: 500;
+    padding-block: 21px;
+}
+
+.bird-button {
+    background-color: white;
+    width: 225px;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.button:hover {
+    color: white;
+    background-color: #376B44;
+}
+
 @media (max-width: 1280px) {
     .header-menu-list {
         column-gap: 30px;
+    }
+
+    .section-container-bird {
+        column-gap: 10px;
+        margin-top: 20px;
+    }
+
+    .bird-h1 {
+        font-size: 40px;
+    }
+
+    .bird-description {
+        font-size: 15px;
+        margin-bottom: 30px;
     }
 }
 
@@ -299,10 +381,31 @@ nav {
     nav {
         flex-wrap: wrap;
         row-gap: 10px;
+        justify-content: center;
     }
 
     .header-menu-list {
+        padding: 7px;
+        border-top: 1px solid rgb(208, 208, 208);
         column-gap: 10px;
         flex-wrap: wrap;
+    }
+
+    .section-container-bird {
+        column-gap: 5px;
+    }
+
+    .bird-img {
+        display: none;
+    }
+
+    .bird-h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .bird-description {
+        font-size: 15px;
+        margin-bottom: 15px;
     }
 }
