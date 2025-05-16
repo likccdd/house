@@ -353,6 +353,146 @@ nav {
     background-color: #376B44;
 }
 
+.main-section {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+}
+
+.main-container {
+    margin: 20px;
+    display: flex;
+    row-gap: 20px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1140px;
+    max-height: 44px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.is-active {
+    display: grid !important;
+}
+
+.nav-h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #2C2D35;
+    line-height: 110.00000000000001%;
+}
+
+.card-button-item {
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D4E8D9;
+    border-radius: 20px;
+    width: 126px;
+    height: 46px;
+    color: #2C2D35;
+    transition: 0.3s;
+}
+
+.card-button-item:hover {
+    background-color: #376B44;
+    color: white;
+}
+
+.button-active {
+    border: 2px solid #598D66;
+}
+
+.nav-menu-list {
+    display: flex;
+    column-gap: 32px;
+}
+
+.main-card {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: #E1EDE6;
+    padding: 20px;
+    padding-bottom: 30px !important;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    height: 730px;
+}
+
+.autor {
+    font-size: 18px;
+    color: #86928B;
+    margin-bottom: 10px;
+    line-height: 100%;
+    font-weight: 500;
+}
+
+.name {
+    line-height: 100%;
+    margin-bottom: 8px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #2C2D35;
+}
+
+.material {
+    line-height: 100%;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #2C2D35;
+}
+
+.price {
+    color: #598D66;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    width: 310px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E1EDE6;
+    border: solid 1px #598D66;
+    color: #598D66;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+    line-height: 100%;
+}
+
+.card-button:hover {
+    background-color: #376B44;
+    color: white;
+}
+
+.card-img {
+    max-width: 290px;
+    max-width: 422px;
+}
+
 @media (max-width: 1280px) {
     .header-menu-list {
         column-gap: 30px;
@@ -370,6 +510,26 @@ nav {
     .bird-description {
         font-size: 15px;
         margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .main-nav {
+        align-items: center;
+
+    }
+
+    .nav-menu-list {
+        column-gap: 15px;
+    }
+
+    .is-active {
+        justify-content: center;
+    }
+
+    .main-card {
+        grid-template-columns: repeat(2, 0fr);
+        gap: 15px;
     }
 }
 
@@ -407,5 +567,40 @@ nav {
     .bird-description {
         font-size: 15px;
         margin-bottom: 15px;
+    }
+
+    .main-nav {
+        max-height: 150px;
+    }
+
+    .nav-menu-list {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .card {
+        width: 300px;
+        height: 600px;
+    }
+
+    .card-button {
+        width: 230px;
+        height: 55px;
+        margin-inline: auto;
+    }
+
+    .material {
+        margin-bottom: 10px;
+    }
+
+    .card-img {
+        margin-inline: auto;
+        width: 250px;
+        height: 364px;
+    }
+
+    .main-card {
+        grid-template-columns: repeat(1, 0fr);
+        gap: 15px;
     }
 }
