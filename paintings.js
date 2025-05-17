@@ -11,13 +11,18 @@ const show = (index) => {
 buttonCountries.forEach(e => {
     e.addEventListener('click', () => {
         if (e.classList.contains('france')) {
+            buttonCountries[currentIndex].classList.remove('button-active')
             show(0)
+            buttonCountries[0].classList.add('button-active')
         } else if (e.classList.contains('germany')) {
+            buttonCountries[currentIndex].classList.remove('button-active')
             show(1)
+            buttonCountries[1].classList.add('button-active')
         } else if (e.classList.contains('england')) {
+            buttonCountries[currentIndex].classList.remove('button-active')
             show(2)
+            buttonCountries[2].classList.add('button-active')
         }
     })
 })
-
 show(currentIndex)
