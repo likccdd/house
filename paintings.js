@@ -26,3 +26,15 @@ buttonCountries.forEach(e => {
     })
 })
 show(currentIndex)
+
+const buttons = document.querySelectorAll('.card-button')
+const cart = document.querySelector('.link-square')
+let count = 0
+
+buttons.forEach(element => {
+    element.addEventListener('click', () => {
+        count++ 
+        cart.textContent = count
+        cart.style.cssText = 'display : flex; '
+    })
+})
