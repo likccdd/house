@@ -493,6 +493,72 @@ nav {
     max-width: 422px;
 }
 
+.collection-section {
+    width: 100%;
+    background-image: url(./img/photo_2024-11-29_23-18-00.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 574px;
+    height: 574px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+
+}
+
+.collection-container {
+    width: 100%;
+    margin-inline: auto;
+    max-width: 1140px;
+}
+
+.h2-collection {
+    color: #F4F6F5;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    margin-bottom: 20px;
+    background-image: url(./img/Star\ 2.svg);
+    background-size: 80, 80;
+    background-repeat: no-repeat;
+    padding-left: 100px;
+}
+
+
+
+.collection-description {
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 150%;
+    max-width: 540px;
+    margin-bottom: 60px;
+}
+
+.collection-p {
+    margin-bottom: 20px;
+}
+
+.collection-button {
+    background-color: #EEDB6D;
+    color: #2C2D35;
+    width: 257px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    transition: 0.3s;
+}
+
+.collection-button:hover {
+    background-color: #D9B949;
+    color: #2C2D35;
+}
+
 @media (max-width: 1280px) {
     .header-menu-list {
         column-gap: 30px;
@@ -531,6 +597,19 @@ nav {
         grid-template-columns: repeat(2, 0fr);
         gap: 15px;
     }
+
+    .collection-description {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 737px) {
+    .main-card {
+        grid-template-columns: repeat(1, 0fr);
+        gap: 15px;
+    }
+
 }
 
 @media (max-width: 676px) {
@@ -599,8 +678,29 @@ nav {
         height: 364px;
     }
 
-    .main-card {
-        grid-template-columns: repeat(1, 0fr);
-        gap: 15px;
+    .h2-collection {
+        background-size: 40px,40px;
+        font-size: 35px;
+        padding-left: 50px;
     }
+
+    .collection-description {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .collection-button {
+        width: 200px;
+        height: 50px;
+    }
+
+    .collection-section {
+        height: 650px;
+    }
+
+    .collection-section {
+        padding: 5px;
+    }
+
+
 }
