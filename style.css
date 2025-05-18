@@ -593,13 +593,106 @@ nav {
     column-gap: 30px;
 }
 
+.footer {
+    background-color: #E1EDE6;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    max-width: 1140px;
+    width: 100%;
+    margin: 10px;
+}
+
+.footer-phone {
+    margin-right: 115px;
+}
+
+.link {
+    transition: 0.3s;
+}
+
+.link:hover {
+    color: #376B44;
+}
+
+.phone {
+    color: #2C2D35;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    margin-bottom: 8px;
+    margin-top: 35px;
+}
+
+.building {
+    font-size: 18px;
+    color: #86928B;
+    line-height: 100%;
+    font-weight: 500;
+}
+
+.phone-menu-list {
+    display: flex;
+    column-gap: 60px;
+    margin-right: auto;
+}
+
+.phone-menu-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-h2 {
+    font-size: 20px;
+    color: #2C2D35;
+    margin-bottom: 6px;
+    line-height: 100%;
+    font-weight: 500;
+}
+
+.item-link {
+    font-size: 18px;
+    color: #86928B;
+    line-height: 100%;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 6px;
+}
+
+.contacts-menu-list {
+    display: flex;
+    margin-bottom: 6px;
+    column-gap: 33px;
+}
+
+.contacts-company {
+    line-height: 120%;
+    font-size: 12px;
+    color: #86928B;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.contacts-rights {
+    line-height: 120%;
+    font-size: 12px;
+    color: #86928B;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
 @media (max-width: 1280px) {
     .header-menu-list {
         column-gap: 30px;
     }
 
     .section-container-bird {
-        column-gap: 10px;
+        ~column-gap: 10px;
         margin-top: 20px;
     }
 
@@ -650,6 +743,25 @@ nav {
         padding-top: 80px;
     }
 
+}
+
+@media (max-width: 990px) {
+    .footer-container {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .phone-menu-list {
+        margin-right: 400px;
+    }
+
+    .footer-contacts {
+        order: 1;
+        border-top: 1px solid rgb(208, 208, 208);
+        padding: 15px;
+        width: 100%;
+
+    }
 }
 
 
@@ -756,5 +868,31 @@ nav {
         padding: 5px;
     }
 
+    .phone-menu-list {
+        column-gap: 20px;
+    }
 
+
+}
+
+@media (max-width: 400px) {
+    nav {
+        margin-inline: 5px;
+    }
+
+    .header-menu-list {
+        flex-wrap: nowrap;
+    }
+
+    .phone-menu-list {
+        row-gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .phone-menu-list {
+        margin-right: 400px;
+    }
+    .building {
+        margin-bottom: 10px;
+    }
 }
