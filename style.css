@@ -504,8 +504,6 @@ nav {
     display: flex;
     align-items: center;
     padding: 15px;
-    margin-bottom: 15px;
-
 }
 
 .collection-container {
@@ -559,6 +557,42 @@ nav {
     color: #2C2D35;
 }
 
+.section-team {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1140px;
+    column-gap: 30px;
+    margin-block: 70px;
+}
+
+.section-container {
+    padding-top: 124px;
+    margin-inline: 15px;
+}
+
+.h2-team {
+    color: #2C2D35;
+    font-size: 40px;
+    line-height: 110.00000000000001%;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.team-description {
+    font-size: 18px;
+    line-height: 110.00000000000001%;
+    font-weight: 500;
+    color: #2C2D35;
+    margin-bottom: 20px;
+    line-height: 150%;
+}
+
+.team-menu-list {
+    display: flex;
+    column-gap: 30px;
+}
+
 @media (max-width: 1280px) {
     .header-menu-list {
         column-gap: 30px;
@@ -602,12 +636,32 @@ nav {
         margin-bottom: 30px;
     }
 
+    .section-team {
+        align-items: center;
+        margin-block: 40px;
+    }
+
+    .section-team-img {
+        width: 345px;
+        height: 340px;
+    }
+
+    .section-container {
+        padding-top: 80px;
+    }
+
 }
+
 
 @media (max-width: 737px) {
     .main-card {
         grid-template-columns: repeat(1, 0fr);
         gap: 15px;
+    }
+
+    .section-team {
+        flex-direction: column;
+        align-items: center;
     }
 
 }
@@ -679,7 +733,7 @@ nav {
     }
 
     .h2-collection {
-        background-size: 40px,40px;
+        background-size: 40px, 40px;
         font-size: 35px;
         padding-left: 50px;
     }
