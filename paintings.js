@@ -33,7 +33,7 @@ let count = 0
 
 buttons.forEach(element => {
     element.addEventListener('click', () => {
-        count++ 
+        count++
         cart.textContent = count
         cart.style.cssText = 'display : flex; '
     })
