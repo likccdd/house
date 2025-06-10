@@ -8,6 +8,21 @@ const show = (index) => {
     currentIndex = index
 }
 
+const saveCounterToLocalStorage = () => {
+    const counters = []
+    counters.push(count)
+    localStorage.setItem('count', JSON.stringify(counters))
+}
+
+const loadCounterFromLocalStorage = () => {
+    const counters = JSON.parse(localStorage.getItem('count'))
+    if (counters) {
+        count = counters[0]
+        cart.textContent = count
+        cart.style.cssText = 'display : flex; '
+    }
+}
+
 buttonCountries.forEach(e => {
     e.addEventListener('click', () => {
         if (e.classList.contains('france')) {
@@ -36,5 +51,8 @@ buttons.forEach(element => {
         count++
         cart.textContent = count
         cart.style.cssText = 'display : flex; '
+        saveCounterToLocalStorage()
     })
 })
+
+loadCounterFromLocalStorage()
